@@ -56,3 +56,34 @@ table {
 html, body {
     height: 100%;
 }
+
+@main-color: @batman-gray;
+@batman-gray: #484848;
+
+@font-stack: 'Montserrat', sans-serif;
+
+body {
+  background-color: @main-color;
+  color: white;
+  font-family: @font-stack;
+}
+
+nav {
+  display: flex;
+  margin: 2% 20%;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: lightgray;
+
+}
+.top-content {
+  max-width: 100%;
+  background-image: url("../images/batarang.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1% 0%;
+  padding: 23%;
+}
